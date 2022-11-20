@@ -30,7 +30,7 @@
   <body class="bg-white text-body font-body">
     <div class="main">
       <!--Header-->
-      <header class="bg-transparent sticky-bar">
+      <header class="bg-transparent">
         <div class="container bg-transparent">
           <nav class="bg-transparent flex justify-between items-center">
             <a class="text-3xl font-semibold leading-none" href="index.html">
@@ -65,6 +65,56 @@
           </nav>
         </div>
       </header>
+
+      <!-- Mobile View -->
+      <div class="hidden navbar-menu relative z-100 transition duration-300">
+        <div
+          class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
+        ></div>
+        <nav
+          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300"
+        >
+          <div class="flex items-center mb-4">
+            <a class="mr-auto text-3xl font-semibold leading-none" href="#">
+              <img
+                style="width: 100px"
+                src="assets/imgs/logos/placenow-modified.png"
+                alt=""
+              />
+            </a>
+            <button class="navbar-close">
+              <svg
+                class="h-6 w-6 primary cursor-pointer hover:primary"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewbox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                ></path>
+              </svg>
+            </button>
+          </div>
+          <div>
+            <div class="mt-4 pt-4 border-t border-blueGray-100">
+              <a
+                class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-primary hover:bg-primary white rounded"
+                href="jee.html"
+                >JEE Exam</a
+              >
+              <a
+                class="block px-4 py-3 mb-2 text-xs text-center primary hover:primary font-semibold leading-none border rounded"
+                href="placements.html"
+                >Placements</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
 
       <!--Hero-->
       <section class="hero-3">
@@ -918,7 +968,7 @@
                   </ul>
                 </div>
                 <div
-                  class="w-full lg:w-auto mb-4 wow animate__animated animate__fadeInUp animated"
+                  class="w-1/2 lg:w-auto mb-4 wow animate__animated animate__fadeInUp animated"
                   data-wow-delay=".5s"
                 >
                   <h5 class="mb-6 text-lg font-bold font-heading">
