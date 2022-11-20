@@ -13,7 +13,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="assets/imgs/logos/favicon.svg"
+      href="assets/imgs/logos/placenow-favicon-circle-modified.png"
     />
 
     <!-- Vendor CSS -->
@@ -23,25 +23,34 @@
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/tailwind-built.css?v=2.0" />
+
+    <!-- Lottie File -->
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </head>
   <body class="bg-white text-body font-body">
     <div class="main">
       <!--Header-->
       <header class="bg-transparent sticky-bar">
         <div class="container bg-transparent">
-          <nav class="bg-transparent flex justify-between items-center py-3">
+          <nav class="bg-transparent flex justify-between items-center">
             <a class="text-3xl font-semibold leading-none" href="index.html">
-              <img class="h-10" src="assets/imgs/logos/monst-logo.svg" alt="" />
+              <img
+                style="width: 90px"
+                src="assets/imgs/logos/placenow-modified.png"
+                alt=""
+              />
             </a>
             <div class="hidden lg:block">
-              <a class="btn-accent hover-up-2" href="jee.html">JEE Exam</a>
+              <a class="btn-accent primary hover-up-2" href="jee.html"
+                >JEE Exam</a
+              >
               <a class="btn-primary hover-up-2" href="placements.html"
                 >Placements</a
               >
             </div>
             <div class="lg:hidden">
               <button
-                class="navbar-burger flex items-center py-2 px-3 text-blue-500 hover:text-blue-700 rounded border border-blue-200 hover:border-blue-300"
+                class="navbar-burger flex items-center py-2 px-3 primary hover:primary rounded border border-blue-200 hover:border-blue-300"
               >
                 <svg
                   class="fill-current h-4 w-4"
@@ -57,208 +66,6 @@
         </div>
       </header>
 
-      <!--Mobile menu-->
-      <div class="hidden navbar-menu relative z-50 transition duration-300">
-        <div
-          class="navbar-backdrop fixed inset-0 bg-blueGray-800 opacity-25"
-        ></div>
-        <nav
-          class="fixed top-0 left-0 bottom-0 flex flex-col w-5/6 max-w-sm py-6 px-6 bg-white border-r overflow-y-auto transition duration-300"
-        >
-          <div class="flex items-center mb-8">
-            <a class="mr-auto text-3xl font-semibold leading-none" href="#">
-              <img class="h-10" src="assets/imgs/logos/monst-logo.svg" alt="" />
-            </a>
-            <button class="navbar-close">
-              <svg
-                class="h-6 w-6 text-blueGray-400 cursor-pointer hover:text-blue-500"
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewbox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M6 18L18 6M6 6l12 12"
-                ></path>
-              </svg>
-            </button>
-          </div>
-          <div>
-            <ul class="mobile-menu">
-              <li class="mb-1 menu-item-has-children rounded-xl">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"
-                  href="#"
-                  >Home</a
-                >
-                <ul class="dropdown pl-5">
-                  <li>
-                    <a
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      href="index.html"
-                      >Home 1</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      href="index-2.html"
-                      >Home 2</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      href="index-3.html"
-                      >Home 3</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      href="index-4.html"
-                      >Home 4</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      href="index-5.html"
-                      >Home 5</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="mb-1 rounded-xl">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500 rounded-xl"
-                  href="about.html"
-                  >About Us</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="services.html"
-                  >Services</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="portfolio.html"
-                  >Portfolio</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="pricing.html"
-                  >Pricing</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="team.html"
-                  >Team</a
-                >
-              </li>
-              <li class="mb-1 menu-item-has-children rounded-xl">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="team.html"
-                  >Blog</a
-                >
-                <ul class="dropdown pl-5">
-                  <li>
-                    <a
-                      href="blog.html"
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      >Category 1</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="blog-2.html"
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      >Category 2</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="blog-single.html"
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      >Single 1</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="blog-single-2.html"
-                      class="block p-3 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                      >Single 2</a
-                    >
-                  </li>
-                </ul>
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="faqs.html"
-                  >Faqs</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="testimonials.html"
-                  >Testimonial</a
-                >
-              </li>
-              <li class="mb-1">
-                <a
-                  class="block p-4 text-sm text-blueGray-500 hover:bg-blue-50 hover:text-blue-500"
-                  href="contact.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <div class="mt-4 pt-6 border-t border-blueGray-100">
-              <a
-                class="block px-4 py-3 mb-3 text-xs text-center font-semibold leading-none bg-blue-400 hover:bg-blue-500 text-white rounded"
-                href="#"
-                >Sign Up</a
-              >
-              <a
-                class="block px-4 py-3 mb-2 text-xs text-center text-blue-500 hover:text-blue-700 font-semibold leading-none border border-blue-200 hover:border-blue-300 rounded"
-                href="#"
-                >Log In</a
-              >
-            </div>
-          </div>
-          <div class="mt-auto">
-            <p class="my-4 text-xs text-blueGray-400">
-              <span>Get in Touch</span>
-              <a class="text-blue-500 hover:text-blue-500 underline" href="#"
-                >contact@monst.com</a
-              >
-            </p>
-            <a class="inline-block px-1" href="#">
-              <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-            </a>
-            <a class="inline-block px-1" href="#">
-              <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-            </a>
-            <a class="inline-block px-1" href="#">
-              <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-            </a>
-          </div>
-        </nav>
-      </div>
-
       <!--Hero-->
       <section class="hero-3">
         <div class="container">
@@ -271,13 +78,13 @@
                   class="text-3xl lg:text-4xl mb-4 font-bold font-heading wow animate__animated animate__fadeIn"
                 >
                   Exclusive Agency For <br />
-                  <span class="text-blue-500">Technology </span>Provide Solution
+                  <span class="primary">Technology </span>Provide Solution
                 </h2>
                 <p
                   class="text-blueGray-400 leading-relaxed wow animate__animated animate__fadeIn"
                 >
-                  We are <strong class="text-blue-500">Place Now</strong>, a
-                  Creative Design
+                  We are <strong class="primary">Place Now</strong>, a Creative
+                  Design
                   <span
                     class="typewrite d-inline text-brand"
                     data-period="3000"
@@ -292,7 +99,7 @@
               </div>
               <div class="text-center lg:text-left">
                 <a
-                  class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-blue-500 hover:bg-blue-700 rounded wow animate__animated animate__fadeInUp"
+                  class="tracking-wide hover-up-2 block sm:inline-block py-4 px-8 mb-4 sm:mb-0 sm:mr-3 text-xs text-white text-center font-semibold leading-none bg-primary hover:bg-primary rounded wow animate__animated animate__fadeInUp"
                   href="#key-features"
                   >Key Features</a
                 >
@@ -306,11 +113,14 @@
             </div>
             <div class="w-full lg:w-3/5 px-3 mb-12 lg:mb-0">
               <div class="lg:h-128 flex items-center justify-center">
-                <img
-                  class="lg:max-w-lg"
-                  src="assets/imgs/illustrations/work-tv.png"
-                  alt=""
-                />
+                <lottie-player
+                  src="https://assets7.lottiefiles.com/packages/lf20_6ft9bypa.json"
+                  background="transparent"
+                  speed="1"
+                  loop
+                  autoplay
+                >
+                </lottie-player>
               </div>
             </div>
           </div>
@@ -328,7 +138,7 @@
                   data-wow-delay=".1s"
                 >
                   What do we
-                  <span class="text-blue-600">offer</span>?
+                  <span class="primary">offer</span>?
                 </h2>
                 <p
                   class="mb-8 leading-loose text-blueGray-400 wow animate__animated animate__fadeInUp"
@@ -340,7 +150,7 @@
                   tincidunt vehicula. Fusce sit amet dui tellus.
                 </p>
                 <a
-                  class="inline-block text-xs py-4 px-8 text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded hover-up-2 wow animate__animated animate__fadeInUp"
+                  class="inline-block text-xs py-4 px-8 text-white font-semibold leading-none bg-primary hover:bg-primary rounded hover-up-2 wow animate__animated animate__fadeInUp"
                   data-wow-delay=".5s"
                   href="#"
                   >Learn More</a
@@ -355,7 +165,7 @@
                 >
                   <div class="px-4">
                     <span
-                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600"
+                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 primary"
                       >1</span
                     >
                   </div>
@@ -375,7 +185,7 @@
                 >
                   <div class="px-4">
                     <span
-                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600"
+                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 primary"
                       >2</span
                     >
                   </div>
@@ -395,7 +205,7 @@
                 >
                   <div class="px-4">
                     <span
-                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 text-blue-600"
+                      class="flex w-16 h-16 mx-auto items-center justify-center text-2xl font-bold font-heading rounded-full bg-blue-50 primary"
                       >3</span
                     >
                   </div>
@@ -420,7 +230,7 @@
         <div class="container">
           <div class="max-w-lg mx-auto mb-12 text-center">
             <span
-              class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeInUp"
+              class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 primary rounded-xl wow animate__animated animate__fadeInUp"
               data-wow-delay=".3s"
               >Latest News</span
             >
@@ -451,8 +261,8 @@
                     alt=""
                   />
                   <div class="pl-4">
-                    <p class="text-lg font-bold">Michael Jackson</p>
-                    <p class="text-blue-600">CEO</p>
+                    <p class="text-lg font-bold">Exam Dates</p>
+                    <p class="primary">Mumbai</p>
                   </div>
                 </div>
                 <p class="leading-loose text-blueGray-400 mb-5 text-sm">
@@ -482,8 +292,8 @@
                     alt=""
                   />
                   <div class="pl-4">
-                    <p class="text-lg font-bold">Oprah Winfrey</p>
-                    <p class="text-blue-600 text-sm">Head of Development</p>
+                    <p class="text-lg font-bold">Enrollment Letter</p>
+                    <p class="primary text-sm">Mumbai</p>
                   </div>
                 </div>
                 <p class="leading-loose text-blueGray-400 mb-5 text-sm">
@@ -513,8 +323,8 @@
                     alt=""
                   />
                   <div class="pl-4">
-                    <p class="text-lg font-bold">Leonardo</p>
-                    <p class="text-blue-600 text-sm">Head of Operations</p>
+                    <p class="text-lg font-bold">Admit Card Released</p>
+                    <p class="primary text-sm">Delhi</p>
                   </div>
                 </div>
                 <p class="leading-loose text-blueGray-400 mb-5 text-sm">
@@ -544,8 +354,8 @@
                     alt=""
                   />
                   <div class="pl-4">
-                    <p class="text-lg font-bold">Jerry Seinfeld</p>
-                    <p class="text-blue-600 text-sm">Head of Development</p>
+                    <p class="text-lg font-bold">Answer Sheet Released</p>
+                    <p class="primary text-sm">Mumbai</p>
                   </div>
                 </div>
                 <p class="leading-loose text-blueGray-400 mb-5 text-sm">
@@ -575,7 +385,7 @@
         <div class="container">
           <div class="max-w-lg mx-auto mb-12 text-center">
             <span
-              class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl wow animate__animated animate__fadeInUp"
+              class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 primary rounded-xl wow animate__animated animate__fadeInUp"
               data-wow-delay=".3s"
               >Latest Testimonials</span
             >
@@ -592,7 +402,7 @@
                 class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".3s"
               >
-                <div class="text-blue-500 mx-auto mb-4">
+                <div class="primary mx-auto mb-4">
                   <svg
                     class="w-8 h-8 mx-auto"
                     fill="none"
@@ -621,7 +431,7 @@
                 class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".5s"
               >
-                <div class="text-blue-500 mx-auto mb-4">
+                <div class="primary mx-auto mb-4">
                   <svg
                     class="w-8 h-8 mx-auto"
                     fill="none"
@@ -650,7 +460,7 @@
                 class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".7s"
               >
-                <div class="text-blue-500 mx-auto mb-4">
+                <div class="primary mx-auto mb-4">
                   <svg
                     class="w-8 h-8 mx-auto"
                     fill="none"
@@ -679,7 +489,7 @@
                 class="border border-gray-100 pt-8 px-6 pb-6 bg-white text-center rounded shadow hover:shadow-lg hover-up-2 transition duration-500 wow animate__animated animate__fadeInUp"
                 data-wow-delay=".9s"
               >
-                <div class="text-blue-500 mx-auto mb-4">
+                <div class="primary mx-auto mb-4">
                   <svg
                     class="w-8 h-8 mx-auto"
                     fill="none"
@@ -756,7 +566,7 @@
                         <button
                           class="w-full font-bold border-b border-gray-200 py-3 flex justify-between items-center mt-4"
                           @click="faqs = faqs.map(f => ({ ...f, isOpen: f.question !== faq.question ? false : !f.isOpen}))"
-                          x-bind:class="isOpen ? 'text-blue-500' : ''"
+                          x-bind:class="isOpen ? 'primary' : ''"
                         >
                           <div x-text="faq.question"></div>
                           <svg
@@ -796,7 +606,7 @@
               </div>
             </div>
             <div
-              class="hidden lg:block lg:relative lg:w-1/3 bg-blue-500 wow animate__animated animate__fadeInUp"
+              class="hidden lg:block lg:relative lg:w-1/3 bg-primary wow animate__animated animate__fadeInUp"
               data-wow-delay=".3s"
             >
               <div class="absolute left-0 md:-mr-32 mt-24 flex items-center">
@@ -835,7 +645,7 @@
                 data-wow-delay=".1s"
               >
                 <svg
-                  class="mb-6 h-8 w-8 mx-auto text-blue-600"
+                  class="mb-6 h-8 w-8 mx-auto primary"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewbox="0 0 24 24"
@@ -859,7 +669,7 @@
                 data-wow-delay=".3s"
               >
                 <svg
-                  class="mb-6 h-8 w-8 mx-auto text-blue-600"
+                  class="mb-6 h-8 w-8 mx-auto primary"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewbox="0 0 24 24"
@@ -883,7 +693,7 @@
                 data-wow-delay=".5s"
               >
                 <svg
-                  class="mb-6 h-8 w-8 mx-auto text-blue-600"
+                  class="mb-6 h-8 w-8 mx-auto primary"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewbox="0 0 24 24"
@@ -993,7 +803,7 @@
                     >
                   </label>
                   <button
-                    class="py-4 px-8 text-sm text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                    class="py-4 px-8 text-sm text-white font-semibold leading-none bg-primary hover:bg-primary rounded"
                     type="submit"
                   >
                     Submit
@@ -1011,9 +821,9 @@
           class="hidden lg:block absolute inset-0 w-1/2 ml-auto bg-blueGray-50"
         ></div>
         <div class="container">
-          <div class="relative flex flex-wrap -mx-4">
+          <div class="relative flex flex-wrap -mx-4 pb-10">
             <div
-              class="w-full lg:w-1/2 pt-20 px-4 max-w-lg lg:max-w-full mx-auto lg:mx-0 text-center lg:text-left"
+              class="w-full lg:w-1/2 pt-10 px-4 max-w-lg lg:max-w-full mx-auto lg:mx-0 text-center lg:text-left"
             >
               <a
                 class="inline-block mx-auto lg:ml-0 text-3xl font-semibold leading-none wow animate__animated animate__fadeInUp animated"
@@ -1021,12 +831,12 @@
                 href="index.html"
               >
                 <img
-                  class="h-10"
-                  src="assets/imgs/logos/monst-logo.svg"
+                  style="width: 100px"
+                  src="assets/imgs/logos/placenow-modified.png"
                   alt=""
                 />
               </a>
-              <div class="mt-12 mb-16">
+              <div class="mt-4 mb-8">
                 <p
                   class="mb-4 text-xs text-blueGray-400 text-center lg:text-left wow animate__animated animate__fadeInUp animated"
                   data-wow-delay=".1s"
@@ -1060,10 +870,10 @@
                     />
                   </div>
                   <button
-                    class="hover-up-2 w-full lg:w-auto py-4 px-8 lg:ml-6 text-xs text-white font-semibold leading-none bg-blue-400 hover:bg-blue-500 rounded"
+                    class="hover-up-2 w-full lg:w-auto py-4 px-8 lg:ml-6 text-xs text-white font-semibold leading-none bg-primary hover:bg-primary rounded"
                     type="submit"
                   >
-                    Sign Up
+                    Subscribe
                   </button>
                 </div>
               </div>
@@ -1074,28 +884,15 @@
                 <p class="text-xs text-blueGray-400">
                   &copy; 2022. All rights reserved.
                 </p>
-                <div class="-mx-2 mt-4">
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/facebook-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/twitter-blue.svg" alt="" />
-                  </a>
-                  <a class="inline-block px-2" href="#">
-                    <img src="assets/imgs/icons/instagram-blue.svg" alt="" />
-                  </a>
-                </div>
               </div>
             </div>
-            <div class="relative w-full lg:w-1/2 px-4 pt-40 lg:pl-12">
+            <div class="relative w-full lg:w-1/2 px-4 pt-24 lg:pl-12">
               <div class="flex flex-row flex-wrap justify-around mb-12">
                 <div
                   class="w-1/2 lg:w-auto mb-12 wow animate__animated animate__fadeInUp animated"
                   data-wow-delay=".3s"
                 >
-                  <h5 class="mb-6 text-lg font-bold font-heading">
-                    JEE Exam
-                  </h5>
+                  <h5 class="mb-6 text-lg font-bold font-heading">JEE Exam</h5>
                   <ul class="space-y-3">
                     <li>
                       <a
@@ -1124,7 +921,9 @@
                   class="w-full lg:w-auto mb-4 wow animate__animated animate__fadeInUp animated"
                   data-wow-delay=".5s"
                 >
-                  <h5 class="mb-6 text-lg font-bold font-heading">Placements</h5>
+                  <h5 class="mb-6 text-lg font-bold font-heading">
+                    Placements
+                  </h5>
                   <ul class="space-y-3">
                     <li>
                       <a
@@ -1177,7 +976,11 @@
     <div id="preloader-active">
       <div class="preloader flex-1 content-center">
         <div class="logo absolute inset-y-2/4 jump">
-          <img src="assets/imgs/logos/favicon.svg" alt="" />
+          <img
+            style="width: 100px"
+            src="assets/imgs/logos/placenow-modified.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
